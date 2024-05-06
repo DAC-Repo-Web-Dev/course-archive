@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import NavBar from '../components/navBar';
+import Footer from '../components/footer';
 
 export const metadata = {
   title: 'Digital Arts Computing Archive',
@@ -14,8 +15,22 @@ export default function RootLayout({ children }) {
             <NavBar/>
           </div>
          {children}
+         {/* Include the Footer component */}
+        <Footer />
         </body>
     </html>
   )
+  
+  
+  // return (
+    // <html lang="en">
+    //     <body>
+    //     {displayNavBar && <NavBar />}
+    //     {children}
+    //     </body>
+    // </html>
+  // )
+  
+  
 }
 
